@@ -289,6 +289,7 @@ class Commands:
         list[player_two] = float(decimal_new_elo_two)
 
         # update listBox
+        list = Commands.sort_values(list)
         self.list_rank_one.delete(0, END)
         self.list_rank_two.delete(0, END)
         count = 1
